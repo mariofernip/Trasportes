@@ -10,11 +10,8 @@ package transporte;
  *
  * @author mario
  */
-public class Terrestre extends MedioTransporte{
+abstract class Terrestre extends MedioTransporte{
     
-   @Override
-    public void imprimirDatos(){
-    
-    }
-    
+   
+   
 }

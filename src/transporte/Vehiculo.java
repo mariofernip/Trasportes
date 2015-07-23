@@ -10,12 +10,25 @@ package transporte;
  *
  * @author mario
  */
-public class Vehiculo extends Terrestre{
+abstract class Vehiculo extends Terrestre{
+    private String placa;
+
+    public Vehiculo() {
+    }
+
+    public Vehiculo(String placa) {
+        super();
+        this.placa = placa;
+    }
     
-    @Override
-    public void imprimirDatos(){
+
+    public String getPlaca() {
+        return placa;
+    }
+
     
-        
+    public void setPlaca(String placa) {
+        this.placa = placa;
     }
     
 }

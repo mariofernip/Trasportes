@@ -19,14 +19,18 @@ public class Camion extends Vehiculo{
     public Camion() {
     }
 
-    public Camion(int numllantas) {
+    public Camion(int numllantas,String placa) {
+        super(placa);
         this.numllantas = numllantas;
     }
      
      
     @Override 
     public void imprimirDatos(){
-        System.out.println("Datos de Camion");       
+        System.out.println("***Datos de Camion***"); 
+         System.out.println("Placa número");
+        System.out.println(getPlaca());               
+        System.out.println("***Numero de llantas***");
         System.out.println(getNumllantas());
     }
 

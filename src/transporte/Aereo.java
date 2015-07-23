@@ -10,11 +10,9 @@ package transporte;
  *
  * @author mario
  */
-public class Aereo extends MedioTransporte{
+abstract class Aereo extends MedioTransporte{
     
     @Override
-    public void imprimirDatos(){
-    
-    }
+    abstract public void imprimirDatos();
     
 }

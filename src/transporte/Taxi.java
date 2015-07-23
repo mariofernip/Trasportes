@@ -12,19 +12,26 @@ package transporte;
  */
 public class Taxi extends Vehiculo{
 
+    private String cooperativa;
+    
     public Taxi() {
     }
 
-    public Taxi(String cooperativa) {
-        super();
+    public Taxi(String cooperativa, String placa) {
+        super(placa);
         this.cooperativa = cooperativa;
     }
     
-    private String cooperativa;
     
-     @Override
+    
+     
+    
+    @Override
     public void imprimirDatos(){
-    System.out.println("Datos de Taxi");       
+        System.out.println("***Datos de Taxi***");        
+        System.out.println("Placa número");
+        System.out.println(getPlaca());               
+        System.out.println("***Nombre de la Cooperativa***");
         System.out.println(getCooperativa());
     }
 
@@ -33,9 +40,7 @@ public class Taxi extends Vehiculo{
         return cooperativa;
     }
 
-    /**
-     * @param cooperativa the cooperativa to set
-     */
+    
     public void setCooperativa(String cooperativa) {
         this.cooperativa = cooperativa;
     }

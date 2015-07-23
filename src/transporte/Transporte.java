@@ -14,53 +14,31 @@ public class Transporte {
 
     
     public static void main(String[] args) {
-        // TODO code application logic here
         
          Vehiculo[] listado = new Vehiculo[3];
         
         //3 elementos hijo
         //imprimir los datos de los 3 hijos
         
-        Taxi hijo1 = new Taxi();
-        //Hijo hijo2 = new Hijo();
-        Autobus hijo2 = new Autobus();
-        Camion hijo3 = new Camion();
+        Taxi hijo1 = new Taxi("Cooperativa por defecto ND", "Placa por defecto hbb-000");        
+        Autobus hijo2 = new Autobus("Ruta por defecto ND", "Placa por defecto hbb-000");
+        Camion hijo3 = new Camion(4, "Placa por defecto hbb-000");
         
-        hijo1.setCooperativa("9 DE OCTUBRE");
-                
-        hijo2.setRuta("RIOBAMBA-QUITO");
-        
-        hijo3.setNumllantas(18);
-        
+        //hijo1.setCooperativa("9 DE OCTUBRE");
+        //hijo1.setPlaca("hbb-212");
+        //hijo2.setRuta("RIOBAMBA-QUITO");
+        //hijo2.setPlaca("hac-452");        
+        //hijo3.setNumllantas(18);
+        //hijo3.setPlaca("xbb-912");        
         //Mostrar tres hijos 
-        
-        //BOXING UNBOXING
-        
-//         Padre objPadre;
-//         objPadre = hijo1;        
-//         Padre objPadre2;
-//         objPadre2 = hijo2;
-//         Padre objPadre3;
-//         objPadre3 = hijo3;
-//         
-//        Hijo objHijo1 = (Hijo)objPadre;
-//        objHijo1.imprimirDatos();
-//         Hijo objHijo2 = (Hijo)objPadre2;
-//        objHijo2.imprimirDatos(); 
-//        Hijo objHijo3 = (Hijo)objPadre3;
-//        objHijo3.imprimirDatos();
-        //objPadre.imprimirDatos();
-        
-       
+  
         listado[0] = hijo1;
         listado[1] = hijo2;
-        listado[2] = hijo3;
+        listado[2] = hijo3;        
         
-        
-         for (Vehiculo p:listado){
-                       
+         for (Vehiculo p:listado){                       
             p.imprimirDatos();
-            
+             System.out.println("");            
         }
     }
     
